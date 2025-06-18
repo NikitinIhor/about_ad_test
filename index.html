@@ -4,11 +4,45 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>about_ad_test</title>
   </head>
   <body>
     <main>
-      <section class="hero">hero</section>
+      <section class="hero">
+        <div class="hero-back"></div>
+        <div class="hero-content">
+          <h1>NATURALNA ZASADA PIĘKNA</h1>
+          <p>
+            Skuteczna ochrona skóry przed promieniami <span>UVA i UVB</span>
+          </p>
+        </div>
+        <div class="hero-images">
+          <img
+            src="./src/images/hero/krem.png"
+            srcset="
+              ./src/images/hero/krem.png    1x,
+              ./src/images/hero/krem@2x.png 2x
+            "
+            alt="image of krem"
+            class="hero-krem"
+          />
+          <img
+            src="./src/images/hero/aloes.png"
+            srcset="
+              ./src/images/hero/aloes.png    1x,
+              ./src/images/hero/aloes@2x.png 2x
+            "
+            alt="image of aloes"
+            class="hero-aloes"
+          />
+        </div>
+        <p class="hero-info">Zdrowa i naturalna opalenizna</p>
+      </section>
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
