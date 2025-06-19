@@ -9,13 +9,13 @@
   width: 100%;
   height: calc(400 / 16 * 1rem);
 
-  background-image: url("/src/images/hero/hero.png");
+  background-image: url("./src/images/hero/hero.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url("/src/images/hero/hero@2x.png");
+    background-image: url("./src/images/hero/hero@2x.png");
   }
 }
 

@@ -1,0 +1,14 @@
+.image-back {
+  position: relative;
+  width: 100%;
+  height: calc(400 / 16 * 1rem);
+
+  background-image: url("./src/images/image/image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url("./src/images/image/image@2x.png");
+  }
+}
