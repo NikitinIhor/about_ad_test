@@ -1,0 +1,129 @@
+.save {
+  margin-bottom: calc(105 / 16 * 1rem);
+
+  h2 {
+    font-size: calc(28 / 16 * 1rem);
+    color: var(--green);
+    font-weight: 100;
+    margin-bottom: calc(23 / 16 * 1rem);
+    text-align: center;
+  }
+  p {
+    font-size: calc(14 / 16 * 1rem);
+    font-weight: 100;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: calc(24 / 16 * 1rem);
+  }
+}
+.save-body {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24 / 16 * 1rem);
+}
+
+.save-image {
+  width: 100%;
+  height: calc(300 / 16 * 1rem);
+}
+.save-content {
+  h3 {
+    font-size: calc(24 / 16 * 1rem);
+    color: var(--green);
+    width: calc(260 / 16 * 1rem);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(18 / 16 * 1rem);
+  }
+  p {
+    font-size: calc(14 / 16 * 1rem);
+    font-weight: 100;
+    text-align: center;
+  }
+}
+
+.save-info {
+  font-size: calc(14 / 16 * 1rem);
+  color: var(--orange);
+  padding: calc(12 / 16 * 1rem);
+  background-color: rgba(255, 244, 235, 1);
+  border-radius: 8px;
+  width: calc(160 / 16 * 1rem);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: calc(18 / 16 * 1rem);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .save {
+    h2 {
+      font-size: calc(42 / 16 * 1rem);
+      margin-bottom: calc(18 / 16 * 1rem);
+    }
+    p {
+      font-size: calc(18 / 16 * 1rem);
+      width: calc(600 / 16 * 1rem);
+      margin-bottom: calc(50 / 16 * 1rem);
+    }
+  }
+  .save-image {
+    width: calc(660 / 16 * 1rem);
+    height: calc(600 / 16 * 1rem);
+  }
+  .save-content {
+    h3 {
+      width: 100%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: calc(18 / 16 * 1rem);
+    }
+    p {
+      font-weight: 100;
+    }
+  }
+}
+
+@media (min-width: 1350px) {
+  .save {
+    h2 {
+      font-size: calc(64 / 16 * 1rem);
+      margin-bottom: calc(23 / 16 * 1rem);
+    }
+    p {
+      font-size: calc(18 / 16 * 1rem);
+      width: calc(1075 / 16 * 1rem);
+      margin-bottom: calc(100 / 16 * 1rem);
+    }
+  }
+  .save-body {
+    display: flex;
+    flex-direction: row;
+    gap: calc(99 / 16 * 1rem);
+  }
+
+  .save-content {
+    display: flex;
+    flex-direction: column;
+    gap: calc(24 / 16 * 1rem);
+
+    h3 {
+      font-size: calc(34 / 16 * 1rem);
+      width: calc(260 / 16 * 1rem);
+      margin-bottom: 0;
+    }
+    p {
+      font-size: calc(18 / 16 * 1rem);
+      width: calc(453 / 16 * 1rem);
+      text-align: start;
+    }
+  }
+  .save-info {
+    width: calc(227 / 16 * 1rem);
+    margin-bottom: 0;
+  }
+}
