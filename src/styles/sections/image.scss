@@ -1,14 +1,122 @@
+.image {
+  margin-bottom: calc(104 / 16 * 1rem);
+}
 .image-back {
   position: relative;
   width: 100%;
-  height: calc(400 / 16 * 1rem);
+  height: calc(780 / 16 * 1rem);
 
-  background-image: url("./src/images/image/image.png");
+  background-image: url("/backgrounds/image/image.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url("./src/images/image/image@2x.png");
+    background-image: url("/backgrounds/image/image@2x.png");
+  }
+}
+
+.image-dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  .dot-1,
+  .dot-2,
+  .dot-3,
+  .dot-4,
+  .dot-5,
+  .dot-6 {
+    position: absolute;
+    width: calc(70 / 16 * 1rem);
+    height: calc(70 / 16 * 1rem);
+    background-color: #e3e3e3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+
+  .dot-1:hover,
+  .dot-2:hover,
+  .dot-3:hover,
+  .dot-4:hover,
+  .dot-5:hover,
+  .dot-6:hover {
+    transform: scale(1.2);
+  }
+}
+.dot-1 {
+  top: 45%;
+  left: 80%;
+}
+.dot-2 {
+  top: 10%;
+  left: 50%;
+}
+.dot-3 {
+  top: 10%;
+  left: 5%;
+}
+.dot-4 {
+  top: 30%;
+  left: 25%;
+}
+.dot-5 {
+  top: 60%;
+  left: 10%;
+}
+.dot-6 {
+  top: 75%;
+  left: 30%;
+}
+
+span {
+  color: var(--green);
+  font-size: calc(24 / 16 * 1rem);
+  padding: calc(8 / 16 * 1rem);
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: calc(40 / 16 * 1rem);
+  height: calc(40 / 16 * 1rem);
+}
+.image-modal {
+  position: absolute;
+  padding: calc(30 / 16 * 1rem);
+  border-radius: 1rem;
+  background-color: white;
+  z-index: 10;
+  border: 0.5px solid black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px 30px 30px 30px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+
+  h3 {
+    font-size: calc(34 / 16 * 1rem);
+    color: var(--green);
+    margin-bottom: calc(27 / 16 * 1rem);
+    width: calc(400 / 16 * 1rem);
+    font-weight: 500;
+  }
+  p {
+    font-size: calc(18 / 16 * 1rem);
+    width: calc(360 / 16 * 1rem);
+    margin-bottom: calc(25 / 16 * 1rem);
   }
 }
