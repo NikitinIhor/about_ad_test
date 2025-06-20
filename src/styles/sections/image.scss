@@ -6,13 +6,13 @@
   width: 100%;
   height: calc(780 / 16 * 1rem);
 
-  background-image: url("/backgrounds/image/image.png");
+  background-image: url("../../../public/backgrounds/image/image.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url("/backgrounds/image/image@2x.png");
+    background-image: url("../../../public/backgrounds/image/image@2x.png");
   }
 }
 
