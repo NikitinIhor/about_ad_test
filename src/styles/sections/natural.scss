@@ -1,0 +1,66 @@
+.natural {
+  margin-bottom: calc(20 / 16 * 1rem);
+}
+.natural-back {
+  position: relative;
+  width: 100%;
+  height: calc(400 / 16 * 1rem);
+
+  background-image: url("/backgrounds/natural/natural.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url("/backgrounds/natural/natural@2x.png");
+  }
+
+  .natural-content {
+    padding-top: calc(20 / 16 * 1rem);
+    padding-left: calc(20 / 16 * 1rem);
+  }
+
+  .natural-image {
+    margin-bottom: calc(18 / 16 * 1rem);
+    width: calc(80 / 16 * 1rem);
+  }
+
+  h2 {
+    font-size: calc(20 / 16 * 1rem);
+    color: var(--green);
+    margin-bottom: calc(26 / 16 * 1rem);
+    width: calc(200 / 16 * 1rem);
+    font-weight: 500;
+  }
+  p {
+    font-weight: 100;
+    color: var(--green);
+    width: calc(260 / 16 * 1rem);
+  }
+}
+
+@media (min-width: 1350px) {
+  .natural {
+    margin-bottom: calc(107 / 16 * 1rem);
+  }
+  .natural-back {
+    height: calc(600 / 16 * 1rem);
+
+    .natural-content {
+      padding-top: calc(80 / 16 * 1rem);
+      padding-left: calc(80 / 16 * 1rem);
+    }
+
+    .natural-image {
+      width: calc(100 / 16 * 1rem);
+    }
+
+    h2 {
+      font-size: calc(43 / 16 * 1rem);
+      width: calc(400 / 16 * 1rem);
+    }
+    p {
+      width: calc(440 / 16 * 1rem);
+    }
+  }
+}
