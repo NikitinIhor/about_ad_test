@@ -40,9 +40,10 @@
     font-weight: 100;
     opacity: 0;
     visibility: hidden;
+    font-weight: 100;
     animation: fade-in 1s ease-out 0.7s forwards;
-    span {
-      font-size: calc(16 / 16 * 1rem);
+    strong {
+      font-size: calc(18 / 16 * 1rem);
       color: var(--green);
       font-weight: 900;
     }
@@ -105,8 +106,8 @@
       font-size: calc(22 / 16 * 1rem);
       width: calc(300 / 16 * 1rem);
 
-      span {
-        font-size: calc(23 / 16 * 1rem);
+      strong {
+        font-size: calc(32 / 16 * 1rem);
       }
     }
   }
@@ -144,7 +145,7 @@
       font-size: calc(22 / 16 * 1rem);
       width: calc(300 / 16 * 1rem);
 
-      span {
+      strong {
         font-size: calc(23 / 16 * 1rem);
       }
     }
