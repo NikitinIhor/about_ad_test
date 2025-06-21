@@ -42,13 +42,14 @@ export const modal = () => {
     let left = dot.offsetLeft + dotWidth / 2 - modalWidth / 2;
 
     const viewportWidth = window.innerWidth;
+    const padding = 8;
 
-    if (left < 0) {
-      left = 8;
+    if (left < padding) {
+      left = padding;
     }
 
-    if (left + modalWidth > viewportWidth) {
-      left = viewportWidth - modalWidth - 8;
+    if (left + modalWidth > viewportWidth - padding) {
+      left = viewportWidth - modalWidth - padding;
     }
 
     modal.style.top = `${top}px`;

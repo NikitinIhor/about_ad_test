@@ -101,27 +101,27 @@ span {
   background-color: white;
   z-index: 10;
   border: 0.5px solid black;
-  width: calc(200 / 16 * 1rem);
+  min-width: calc(160 / 16 * 1rem);
 
   &::before {
     content: "";
     position: absolute;
-    top: -30px;
+    top: -20px;
     left: 50%;
     transform: translateX(-50%);
-    border-width: 10px 30px 30px 30px;
+    border-width: 10px 20px 20px 20px;
     border-style: solid;
     border-color: transparent transparent white transparent;
   }
 
   h3 {
-    font-size: calc(14 / 16 * 1rem);
+    font-size: calc(10 / 16 * 1rem);
     color: var(--green);
-    margin-bottom: calc(15 / 16 * 1rem);
+    margin-bottom: calc(5 / 16 * 1rem);
     font-weight: 500;
   }
   p {
-    font-size: 1rem;
+    font-size: calc(8 / 16 * 1rem);
     margin-bottom: calc(8 / 16 * 1rem);
   }
 }
@@ -150,20 +150,19 @@ span {
 
   .image-modal {
     padding: calc(18 / 16 * 1rem);
-    width: calc(300 / 16 * 1rem);
 
     h3 {
-      font-size: calc(20 / 16 * 1rem);
-      margin-bottom: calc(18 / 16 * 1rem);
+      font-size: calc(14 / 16 * 1rem);
+      margin-bottom: calc(8 / 16 * 1rem);
     }
     p {
-      font-size: 1rem;
+      font-size: calc(12 / 16 * 1rem);
       margin-bottom: calc(16 / 16 * 1rem);
     }
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1920px) {
   .image {
     margin-bottom: calc(104 / 16 * 1rem);
   }
@@ -192,10 +191,6 @@ span {
   .image-modal {
     position: absolute;
     padding: calc(30 / 16 * 1rem);
-    border-radius: 1rem;
-    background-color: white;
-    z-index: 10;
-    border: 0.5px solid black;
     width: calc(469 / 16 * 1rem);
 
     &::before {
