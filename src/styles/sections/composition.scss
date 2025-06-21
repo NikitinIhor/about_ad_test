@@ -1,0 +1,30 @@
+.composition {
+  margin-bottom: calc(40 / 16 * 1rem);
+  h2 {
+    font-size: calc(32 / 16 * 1rem);
+    font-weight: 100;
+    margin-bottom: calc(24 / 16 * 1rem);
+    color: var(--green);
+    text-align: center;
+  }
+  p {
+    font-size: calc(14 / 16 * 1rem);
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1350px) {
+  .composition {
+    margin-bottom: calc(214 / 16 * 1rem);
+    h2 {
+      font-size: calc(64 / 16 * 1rem);
+    }
+    p {
+      font-size: calc(18 / 16 * 1rem);
+      line-height: 1.8;
+      width: calc(1060 / 16 * 1rem);
+    }
+  }
+}
