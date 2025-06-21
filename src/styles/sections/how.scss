@@ -1,0 +1,334 @@
+.how {
+  margin-bottom: calc(40 / 16 * 1rem);
+}
+
+.how-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: calc(20 / 16 * 1rem);
+  margin-bottom: calc(20 / 16 * 1rem);
+  span {
+    position: relative;
+    width: calc(80 / 16 * 1rem);
+    height: calc(80 / 16 * 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f38122;
+    border-radius: 50%;
+    overflow: hidden;
+
+    .icon-1,
+    .icon-2,
+    .icon-3,
+    .icon-4 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .icon-1 {
+      width: 50px;
+      height: 50px;
+      top: 60%;
+    }
+    .icon-2 {
+      width: 40px;
+      height: 40px;
+      top: 55%;
+    }
+    .icon-3 {
+      width: 40px;
+      height: 40px;
+      top: 40%;
+    }
+    .icon-4 {
+      width: 10px;
+      height: 15px;
+      top: 40%;
+      left: 45%;
+    }
+  }
+}
+.how-block-icon {
+  position: absolute;
+  top: calc(20 / 16 * 1rem);
+  left: calc(200 / 16 * 1rem);
+  padding: calc(8 / 16 * 1rem);
+  background-color: white;
+  border-radius: 50%;
+}
+.how-image {
+  width: 90%;
+  height: calc(320 / 16 * 1rem);
+}
+
+.how-content {
+  margin-bottom: calc(40 / 16 * 1rem);
+  h2 {
+    font-size: calc(32 / 16 * 1rem);
+    color: var(--green);
+    margin-bottom: calc(6 / 16 * 1rem);
+    font-weight: 500;
+  }
+  p {
+    font-size: calc(15 / 16 * 1rem);
+    font-weight: 100;
+    line-height: 1.5;
+  }
+}
+
+.how-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: calc(20 / 16 * 1rem);
+  ::after {
+    position: absolute;
+    content: "";
+    bottom: calc(-50 / 16 * 1rem);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #d9d5d5;
+  }
+  li {
+    text-align: center;
+    h3 {
+      font-size: calc(22 / 16 * 1rem);
+      color: var(--green);
+      font-weight: 500;
+      margin-bottom: calc(12 / 16 * 1rem);
+    }
+    p {
+      font-size: calc(14 / 16 * 1rem);
+      font-weight: 100;
+      line-height: 1.5;
+    }
+  }
+}
+.how-icon {
+  position: relative;
+  width: calc(108 / 16 * 1rem);
+  height: calc(108 / 16 * 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f38122;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: calc(32 / 16 * 1rem);
+  margin-left: auto;
+  margin-right: auto;
+
+  .icon-5,
+  .icon-6,
+  .icon-7,
+  .icon-8,
+  .icon-9,
+  .icon-10,
+  .icon-11 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .icon-5 {
+    width: 15px;
+    height: 15px;
+    top: 25%;
+    left: 65%;
+  }
+  .icon-6 {
+    width: 60px;
+    height: 60px;
+  }
+  .icon-7 {
+    width: 20px;
+    height: 20px;
+    top: 30%;
+    left: 30%;
+  }
+  .icon-8 {
+    width: 55px;
+    height: 55px;
+    top: 60%;
+    left: 60%;
+  }
+  .icon-9 {
+    width: 55px;
+    height: 55px;
+  }
+
+  .icon-11 {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .how-image {
+    width: calc(660 / 16 * 1rem);
+    height: calc(600 / 16 * 1rem);
+  }
+  .how-block-icon {
+    top: calc(20 / 16 * 1rem);
+    left: calc(600 / 16 * 1rem);
+  }
+  .how-block {
+    span {
+      width: calc(100 / 16 * 1rem);
+      height: calc(100 / 16 * 1rem);
+
+      .icon-1 {
+        width: 60px;
+        height: 60px;
+      }
+      .icon-2 {
+        width: 45px;
+        height: 45px;
+      }
+      .icon-3 {
+        width: 50px;
+        height: 50px;
+      }
+      .icon-4 {
+        height: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1350px) {
+  .how {
+    margin-bottom: calc(149 / 16 * 1rem);
+  }
+
+  .how-block {
+    flex-direction: row;
+    gap: calc(168 / 16 * 1rem);
+    margin-bottom: calc(104 / 16 * 1rem);
+    span {
+      width: calc(151 / 16 * 1rem);
+      height: calc(151 / 16 * 1rem);
+
+      .icon-1 {
+        width: 60px;
+        height: 60px;
+      }
+      .icon-2 {
+        width: 45px;
+        height: 45px;
+      }
+      .icon-3 {
+        width: 50px;
+        height: 50px;
+      }
+      .icon-4 {
+        height: 15px;
+      }
+    }
+  }
+  .how-block-icon {
+    top: calc(60 / 16 * 1rem);
+    left: calc(600 / 16 * 1rem);
+    padding: calc(13 / 16 * 1rem);
+  }
+
+  .how-content {
+    margin-bottom: 0;
+    padding-top: calc(180 / 16 * 1rem);
+    h2 {
+      font-size: calc(42 / 16 * 1rem);
+    }
+    p {
+      font-size: calc(24 / 16 * 1rem);
+      width: calc(505 / 16 * 1rem);
+      line-height: 1.8;
+    }
+  }
+
+  .how-list {
+    flex-direction: row;
+    gap: calc(69 / 16 * 1rem);
+    li {
+      width: calc(276 / 16 * 1rem);
+    }
+    ::after {
+      position: absolute;
+      content: "";
+      bottom: calc(-50 / 16 * 1rem);
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #d9d5d5;
+    }
+    li {
+      h3 {
+        font-size: calc(28 / 16 * 1rem);
+        margin-bottom: calc(28 / 16 * 1rem);
+      }
+      p {
+        font-size: calc(18 / 16 * 1rem);
+        line-height: 1.8;
+      }
+    }
+  }
+  .how-icon {
+    position: relative;
+    width: calc(108 / 16 * 1rem);
+    height: calc(108 / 16 * 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f38122;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: calc(32 / 16 * 1rem);
+
+    .icon-5,
+    .icon-6,
+    .icon-7,
+    .icon-8,
+    .icon-9,
+    .icon-10,
+    .icon-11 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .icon-5 {
+      width: 15px;
+      height: 15px;
+      top: 25%;
+      left: 65%;
+    }
+    .icon-6 {
+      width: 60px;
+      height: 60px;
+    }
+    .icon-7 {
+      width: 20px;
+      height: 20px;
+      top: 30%;
+      left: 30%;
+    }
+    .icon-8 {
+      width: 55px;
+      height: 55px;
+      top: 60%;
+      left: 60%;
+    }
+    .icon-9 {
+      width: 55px;
+      height: 55px;
+    }
+
+    .icon-11 {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
